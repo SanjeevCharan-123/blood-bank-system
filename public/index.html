@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blood Bank Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>🩸 Blood Bank Management System</h1>
+
+    <section class="form-section">
+        <h2>Add Donor</h2>
+        <form id="donorForm">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="number" id="age" placeholder="Age" required>
+            <input type="text" id="bloodGroup" placeholder="Blood Group" required>
+            <input type="text" id="contact" placeholder="Contact" required>
+            <input type="date" id="lastDonationDate" required>
+            <button type="submit">Add Donor</button>
+        </form>
+    </section>
+
+    <section class="form-section">
+        <h2>Update Inventory</h2>
+        <form id="inventoryForm">
+            <input type="text" id="invBloodGroup" placeholder="Blood Group" required>
+            <input type="number" id="unitsAvailable" placeholder="Units Available" required>
+            <button type="submit">Update Stock</button>
+        </form>
+    </section>
+
+    <section class="list-section">
+        <h2>🧑‍🤝‍🧑 Donor List</h2>
+        <ul id="donorList"></ul>
+    </section>
+
+    <section class="list-section">
+        <h2>📦 Inventory</h2>
+        <ul id="inventoryList"></ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
